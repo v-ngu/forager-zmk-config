@@ -12,6 +12,13 @@
 &mt { quick_tap_ms = <200>; };
 
 / {
+    behaviors {
+        soft_off: soft_off {
+            compatible = "zmk,behavior-soft-off";
+            label = "Soft Off";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
