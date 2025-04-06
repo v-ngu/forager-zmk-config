@@ -2,16 +2,27 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-#define DEF 0
-#define LWR 1
-#define RSE 2
-#define ADJ 3
+#define BASE 0
+#define EXT 1
+#define SYM 2
+#define NUM 3
+#define SETTINGS 4
 
 &lt { quick_tap_ms = <200>; };
 
 &mt { quick_tap_ms = <200>; };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+        // both left thumb keys
+        combo_settings {
+                timeout-ms = <300>;
+                key-positions = <30 31>;
+                bindings = <&mo SETTINGS>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
