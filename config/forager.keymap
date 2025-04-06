@@ -26,15 +26,15 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer
+        default_layer {
             display-name = "MAIN";
             bindings = <
   &kp Q  &kp W  &kp E  &kp R  &kp T          &kp Y             &kp U  &kp I      &kp O    &kp P
   &kp A  &kp S  &kp D  &kp F  &kp G          &kp H             &kp J  &kp K      &kp L    &kp SINGLE_QUOTE
   &kp Z  &kp X  &kp C  &kp V  &kp B          &kp N             &kp M  &kp COMMA  &kp DOT  &kp FSLH
-                       &mo 1  &lt 3 SPACE    &kp LEFT_SHIFT  &mo 2
+                       &mo 1  &lt 3 SPACE    &kp LEFT_SHIFT    &mo 2
             >;
-        ;
+        };
 
         extend_layer {
             display-name = "NAV";
