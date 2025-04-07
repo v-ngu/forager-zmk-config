@@ -12,18 +12,16 @@
 
 &mt { quick_tap_ms = <200>; };
 
-&soft_off {
-    hold-time-ms = <2000>; // Only turn off it the key is held for 2 seconds or longer.
-};
-
 / {
     combos {
         compatible = "zmk,combos";
+
         // both left thumb keys
+
         combo_settings {
-                timeout-ms = <300>;
-                key-positions = <30 31>;
-                bindings = <&mo SETTINGS>;
+            timeout-ms = <300>;
+            key-positions = <30 31>;
+            bindings = <&mo SETTINGS>;
         };
     };
 
@@ -33,10 +31,10 @@
         default_layer {
             display-name = "MAIN";
             bindings = <
-  &kp Q  &kp W  &kp E  &kp R  &kp T          &kp Y             &kp U  &kp I      &kp O    &kp P
-  &kp A  &kp S  &kp D  &kp F  &kp G          &kp H             &kp J  &kp K      &kp L    &kp SINGLE_QUOTE
-  &kp Z  &kp X  &kp C  &kp V  &kp B          &kp N             &kp M  &kp COMMA  &kp DOT  &kp FSLH
-                       &mo 1  &lt 3 SPACE    &kp LEFT_SHIFT    &mo 2
+  &kp Q  &kp W  &kp E  &kp R  &kp T          &kp Y           &kp U  &kp I      &kp O    &kp P
+  &kp A  &kp S  &kp D  &kp F  &kp G          &kp H           &kp J  &kp K      &kp L    &kp SINGLE_QUOTE
+  &kp Z  &kp X  &kp C  &kp V  &kp B          &kp N           &kp M  &kp COMMA  &kp DOT  &kp FSLH
+                       &mo 1  &lt 3 SPACE    &kp LEFT_SHIFT  &mo 2
             >;
         };
 
@@ -71,7 +69,7 @@
 
         settings_layer {
             bindings = <
-  &none         &none         &none         &none         &none           &none  &none  &none       &none                 &soft_off
+  &soft_off     &none         &none         &none         &none           &none  &none  &none       &none                 &none
   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &none  &none       &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC
   &bt BT_CLR    &none         &none         &none         &none           &none  &none  &kp K_MUTE  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP
                                             &none         &none           &none  &none
