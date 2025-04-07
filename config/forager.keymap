@@ -41,10 +41,10 @@
         extend_layer {
             display-name = "NAV";
             bindings = <
-  &kp ESCAPE      &kp K_BACK        &kp LG(F)     &kp K_FORWARD  &none    &kp PAGE_UP    &kp LG(LEFT_ARROW)  &kp UP_ARROW    &kp LG(RIGHT_ARROW)  &none
-  &sk LEFT_SHIFT  &sk LEFT_CONTROL  &sk LEFT_ALT  &sk LEFT_GUI   &none    &kp PAGE_DOWN  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &none
-  &kp LG(Z)       &kp LG(X)         &kp LG(C)     &kp LG(V)      &none    &none          &kp BACKSPACE       &kp TAB         &none                &kp LG(LC(LS(NUMBER_4)))
-                                                  &none          &none    &kp ENTER      &none
+  &kp ESCAPE      &kp K_BACK  &kp LG(F)         &kp K_FORWARD  &none               &kp PAGE_UP    &kp LG(LEFT_ARROW)  &kp UP_ARROW    &kp LG(RIGHT_ARROW)  &kp BACKSPACE
+  &sk LEFT_SHIFT  &none       &none             &none          &none               &kp PAGE_DOWN  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp ENTER
+  &kp LG(Z)       &kp LG(X)   &sk LEFT_CONTROL  &sk LEFT_ALT   &sk LEFT_COMMAND    &none          &none               &none           &none                &kp LG(LC(LS(NUMBER_4)))
+                                                &none          &none               &none          &kp TAB
             >;
         };
 
