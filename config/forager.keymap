@@ -41,10 +41,10 @@
         extend_layer {
             display-name = "NAV";
             bindings = <
-  &kp ESCAPE      &none  &none             &none         &none               &kp PAGE_UP    &kp LG(LEFT_ARROW)  &kp UP_ARROW    &kp LG(RIGHT_ARROW)  &kp RG(LS(NUMBER_4))
-  &kp TAB         &none  &none             &none         &none               &kp PAGE_DOWN  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &none
-  &kp LEFT_SHIFT  &none  &sk LEFT_CONTROL  &sk LEFT_ALT  &sk LEFT_COMMAND    &none          &none               &none           &none                &kp RIGHT_COMMAND
-                                           &none         &none               &kp ENTER      &kp BACKSPACE
+  &kp ESCAPE      &none      &kp LG(S)         &none         &none               &kp PAGE_UP    &kp LG(LEFT_ARROW)  &kp UP_ARROW    &kp LG(RIGHT_ARROW)  &kp RG(LS(NUMBER_4))
+  &kp TAB         &kp LG(Z)  &kp LG(X)         &kp LG(C)     &kp LG(V)           &kp PAGE_DOWN  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &none
+  &kp LEFT_SHIFT  &none      &sk LEFT_CONTROL  &sk LEFT_ALT  &sk LEFT_COMMAND    &none          &none               &none           &none                &kp RIGHT_COMMAND
+                                               &none         &none               &kp ENTER      &kp BACKSPACE
             >;
         };
 
@@ -61,8 +61,8 @@
             display-name = "NUM";
             bindings = <
   &kp F2   &kp F5  &kp F9            &kp F10       &kp F11             &kp EQUAL     &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9  &kp PLUS
-  &none    &none   &none             &none         &none               &kp ASTERISK  &kp NUMBER_4   &kp N5        &kp NUMBER_6  &kp MINUS
-  &kp TAB  &none   &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND    &kp NUMBER_0  &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
+  &kp TAB  &none   &none             &none         &kp F12             &kp ASTERISK  &kp NUMBER_4   &kp N5        &kp NUMBER_6  &kp MINUS
+  &none    &none   &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND    &kp NUMBER_0  &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
                                      &none         &none               &kp ENTER     &kp BACKSPACE
             >;
         };
