@@ -20,13 +20,13 @@
 
         combo_settings {
             timeout-ms = <300>;
-            key-positions = <30 31>;
+            key-positions = <32 33>;
             bindings = <&mo SETTINGS>;
         };
 
         command {
             bindings = <&kp LEFT_COMMAND>;
-            key-positions = <32 33>;
+            key-positions = <30 31>;
         };
     };
 
