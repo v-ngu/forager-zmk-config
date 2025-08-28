@@ -25,7 +25,7 @@
         };
 
         command {
-            bindings = <&kp LEFT_COMMAND>;
+            bindings = <&mo 4>;
             key-positions = <30 31>;
         };
     };
